@@ -27,6 +27,30 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
     case 53:
       digitalWrite(6,onoff);
       break;
+    case 55:
+      digitalWrite(7,onoff);
+      break;
+    case 57:
+      digitalWrite(8,onoff);
+      break;
+    case 59:
+      digitalWrite(9,onoff);
+      break;
+    case 60:
+      digitalWrite(10,onoff);
+      break;
+    case 62:
+      digitalWrite(11,onoff);
+      break;
+    case 64:
+      digitalWrite(12,onoff);
+      break;
+    case 65:
+      digitalWrite(13,onoff);
+      break;
+    case 67:
+      digitalWrite(14,onoff);
+      break;
   }
     
 
@@ -41,6 +65,15 @@ void setup() {
   pinMode (4, OUTPUT);
   pinMode (5, OUTPUT);
   pinMode (6, OUTPUT);
+  pinMode (7, OUTPUT);
+  pinMode (8, OUTPUT);
+  pinMode (9, OUTPUT);
+  pinMode (10, OUTPUT);
+  pinMode (11, OUTPUT);
+  pinMode (12, OUTPUT);
+  pinMode (13, OUTPUT);
+  pinMode (14, OUTPUT);
+  pinMode (15, OUTPUT);
   MIDI.begin(MIDI_CHANNEL_OMNI); // Initialize the Midi Library.
 // OMNI sets it to listen to all channels.. MIDI.begin(2) would set it
 // to respond to channel 2 notes only.
