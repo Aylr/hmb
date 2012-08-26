@@ -16,40 +16,40 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
   
    switch (pitch) {
     case 48:
-      digitalWrite(3,onoff);
+      digitalWrite(1,onoff);
       break;
     case 50:
-      digitalWrite(4,onoff);
+      digitalWrite(2,onoff);
       break;
     case 52:
-      digitalWrite(5,onoff);
+      digitalWrite(3,onoff);
       break;
     case 53:
-      digitalWrite(6,onoff);
+      digitalWrite(4,onoff);
       break;
     case 55:
-      digitalWrite(7,onoff);
+      digitalWrite(5,onoff);
       break;
     case 57:
-      digitalWrite(8,onoff);
+      digitalWrite(6,onoff);
       break;
     case 59:
-      digitalWrite(9,onoff);
+      digitalWrite(7,onoff);
       break;
     case 60:
-      digitalWrite(10,onoff);
+      digitalWrite(8,onoff);
       break;
     case 62:
-      digitalWrite(11,onoff);
+      digitalWrite(9,onoff);
       break;
     case 64:
-      digitalWrite(12,onoff);
+      digitalWrite(10,onoff);
       break;
     case 65:
-      digitalWrite(13,onoff);
+      digitalWrite(11,onoff);
       break;
     case 67:
-      digitalWrite(14,onoff);
+      digitalWrite(12,onoff);
       break;
   }
     
@@ -61,6 +61,9 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
 }
 
 void setup() {
+
+  pinMode (1, OUTPUT); // Set Arduino board pin 13 to output
+  pinMode (2, OUTPUT); // Set Arduino board pin 13 to output
   pinMode (3, OUTPUT); // Set Arduino board pin 13 to output
   pinMode (4, OUTPUT);
   pinMode (5, OUTPUT);
